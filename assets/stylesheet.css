@@ -1,0 +1,112 @@
+:root{
+    --darkback:rgb(34, 32, 39);
+    --accentblue:lightseagreen;
+    --whitetext:ghostwhite;
+}
+
+
+/* setting background image as background */
+html { 
+    background: url("/images/THTbackground.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Scrollbar stylings */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--darkback); 
+    border-radius: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accentblue); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(4, 99, 94); 
+  }
+
+  /* the track (progress bar) NOT covered by the handle */
+  ::-webkit-scrollbar-track-piece{
+      background: var(--darkback);
+  }
+
+
+
+/* globally adjust font color, style, margin, and weight */
+*{
+    color:var(--whitetext);
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    
+}
+
+/* header color */
+header{
+    background-color: var(--darkback);
+    opacity: 0.9;
+}
+
+/* header positioning and background color */
+.nav-name{
+    font-size: 3.6rem;
+    float:left;
+    margin-top: 1.5vh;
+    padding-left: 3vw;
+    background-color: var(--accentblue);
+    border-radius: .2vw;
+}
+
+
+
+
+/* navigation bar position */
+.navbar{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type:none;
+}
+
+/* navigation item decoration */
+.navitem{
+    margin:2vw;
+    text-decoration: underline;
+    font-size: 3rem;
+    border-radius: .25vw;
+}
+
+/* hover effect for navigation bar items */
+.navitem:hover{
+    background-color: var(--accentblue);
+}
+
+/* Active tab will be colored */
+.active a{
+    color: var(--accentblue);
+}
+
+/* active tab hover effect to turn back to white for visibility */
+.active a:hover{
+    color:ghostwhite;
+}
+
+.landing-main{
+    background-color: black;
+}
+
+.group-photo{
+    display: flex;
+}
