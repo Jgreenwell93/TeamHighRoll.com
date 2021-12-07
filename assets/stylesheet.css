@@ -105,6 +105,8 @@ header{
 
 .landing-main{
     background-color: black;
+    width: 60%;
+    margin: 2vw;
 }
 
 .group-photo{
