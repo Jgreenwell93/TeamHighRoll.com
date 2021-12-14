@@ -55,6 +55,9 @@ html {
     
 }
 
+
+/* landing page stylings */
+
 .page-header{
     height: 6vw;
 }
@@ -74,8 +77,6 @@ header{
     background-color: var(--accentblue);
     border-radius: .2vw;
 }
-
-
 
 
 /* navigation bar position */
@@ -117,3 +118,16 @@ header{
 .group-photo{
     display: flex;
 }
+
+
+
+
+/* about us page stylings */
+
+
+
+
+/* content page stylings */
+
+
+/* media queries */
