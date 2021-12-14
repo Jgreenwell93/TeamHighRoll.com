@@ -2,16 +2,17 @@
     --darkback:rgb(34, 32, 39);
     --accentblue:lightseagreen;
     --whitetext:ghostwhite;
+    --transp-back:rgba(0, 0, 0, 0.705);
 }
 
 
 /* setting background image as background */
 html { 
     background: url("/images/THTbackground.png") no-repeat center center fixed; 
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    -o-background-size: 50%;
-    background-size:50%;
+    -webkit-background-size: 42%;
+    -moz-background-size: 42%;
+    -o-background-size: 42%;
+    background-size:42%;
     background-color:rgb(236, 229, 229);
   }
 
@@ -83,7 +84,6 @@ header{
 .navbar{
     display:flex;
     justify-content: flex-end;
-    list-style-type:none;
 }
 
 /* navigation item decoration */
@@ -110,13 +110,15 @@ header{
 }
 
 .landing-main{
-    background-color: black;
+    background-color: var(--transp-back);
     width: 60%;
-    margin: 2vw;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 .group-photo{
     display: flex;
+    justify-content: center;
 }
 
 
