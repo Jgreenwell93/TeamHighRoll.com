@@ -114,11 +114,18 @@ header{
     width: 60%;
     margin: auto;
     margin-top: 2vh;
+    border-radius: 2vw;
+    font-size: xx-large;
 }
 
 .group-photo{
     display: flex;
     justify-content: center;
+}
+
+#landing-info{
+   text-align: center;
+    margin: 2%;
 }
 
 
