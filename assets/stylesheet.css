@@ -7,11 +7,11 @@
 
 /* setting background image as background */
 html { 
-    background: url("/images/THTbackground.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("/images/THTbackground.png") no-repeat center center fixed; 
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size:50%;
   }
 
   /* Scrollbar stylings */
@@ -48,7 +48,7 @@ html {
 /* globally adjust font color, style, margin, and weight */
 *{
     color:var(--whitetext);
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: lighter;
     margin: 0;
     
