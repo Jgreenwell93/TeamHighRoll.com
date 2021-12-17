@@ -59,14 +59,11 @@ html {
 
 /* Header and nav stylings */
 
-.page-header{
-    height: 6vw;
-}
-
 /* header color */
 header{
     background-color: var(--darkback);
     opacity: 0.9;
+    height: 6vw;
 }
 
 /* header positioning and background color */
@@ -121,6 +118,7 @@ header{
 .group-photo{
     display: flex;
     justify-content: center;
+    padding-top: .5vw;
 }
 
 #landing-info{
@@ -203,9 +201,21 @@ header{
 /* media queries */
 
 /* medium-small */
-/* @media (max-width: 800px){
+@media (max-width: 800px){
+    .page-header{
+    height: 9vw;
+    }
     .nav-name{
      font-size: 2.5rem;
+    }
+    .navitem{
+        font-size: 1.8rem;
+    }
+    .landing-main{
+        width: 95%;
+    }
+    .group-photo{
+        padding-top: 1vw;
     }
 
     .photo-caption-h{
@@ -216,20 +226,24 @@ header{
         font-size: .8rem;
     }
 
-} */
+}
 
 
 /* small */
-/* @media (max-width: 640px){
+@media (max-width: 640px){
     .page-header{
         display:flex;
         flex-wrap: wrap;
+        height:20vw;
+    }
+    .group-photo{
+        height: 50vw;
     }
 
-} */
+}
 
 /* extra small */
-/* @media (max-width: 420px){
+@media (max-width: 420px){
     .page-header{
         display:flex;
         flex-wrap: wrap;
@@ -244,11 +258,11 @@ header{
     }
 
     .photo-caption-h{
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
 
     .photo-caption-p{
         font-size: .8rem;
     }
 
-} */
+}
