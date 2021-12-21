@@ -105,7 +105,8 @@ header{
 .active:hover{
     color:ghostwhite;
 }
-
+ 
+/* landing page main article */
 .landing-main{
     background-color: var(--transp-back);
     width: 60%;
@@ -114,13 +115,14 @@ header{
     border-radius: 2vw;
     font-size: xx-large;
 }
-
+ /* group photo on landing page positioning */
 .group-photo{
     display: flex;
     justify-content: center;
     padding-top: .5vw;
 }
 
+/* text positioning of landing page information */
 #landing-info{
    text-align: center;
     margin: 2%;
@@ -131,11 +133,13 @@ header{
 
 /* about us page stylings */
 
+/* entire section of cards positioning */
 .team-cards{
 
 
 }
 
+/* individal card object styling */
 .card{
      background-color: var(--transp-back);
      /* Add shadows to create the "card" effect */
@@ -151,15 +155,18 @@ header{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
+  /* card photo element */
   .card-photo{
       position: relative;
   }
 
+  /* card photo image sizing */
 .card-photo img{
     border-radius: 5px;
     width: 25vw;
 }
 
+/* positioning of live status of each player default is hidden unless api function turns on */
 .live-status{
     display:none;
     position: absolute;
@@ -170,10 +177,12 @@ header{
     border-radius: .5vw;
 }
 
+/* live status icon sizing */
 .live-status img{
     width:60%;
 }
 
+/* info about each memebr. default hidden unless photo clicked on */
 .member-info{
     /* display:none; */
     padding: 2px 16px;
