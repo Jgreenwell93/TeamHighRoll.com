@@ -131,6 +131,44 @@ header{
 
 /* about us page stylings */
 
+.team-cards{
+
+
+}
+
+.card{
+     background-color: var(--transp-back);
+     /* Add shadows to create the "card" effect */
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     border-radius: 5px; /* 5px rounded corners */
+     width:25%
+     
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card-photo{
+      position: relative;
+  }
+
+.card-photo img{
+    border-radius: 5px;
+    width: 25vw;
+}
+
+.live-status{
+    display:none;
+}
+
+.member-info{
+    /* display:none; */
+    padding: 2px 16px;
+}
+
 
 
 
@@ -142,7 +180,7 @@ header{
 }
 
 
-/* rows of pcontent items positioning and dimensions */
+/* rows of content items positioning and dimensions */
 .content{
  display:flex;
  flex-direction: column;
