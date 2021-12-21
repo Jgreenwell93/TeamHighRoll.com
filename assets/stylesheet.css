@@ -162,6 +162,16 @@ header{
 
 .live-status{
     display:none;
+    position: absolute;
+    bottom: 30vh;
+    right: 5vw;
+    padding-left: 1px;
+    padding-right: 20px; 
+    border-radius: .5vw;
+}
+
+.live-status img{
+    width:40%;
 }
 
 .member-info{
