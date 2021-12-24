@@ -186,7 +186,18 @@ justify-content: center;
     width:60%;
 }
 
-/* info about each memebr. default hidden unless photo clicked on */
+.info-card{
+    background-color: var(--transp-back);
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:25%;
+    margin:2vw;
+    padding: .5vw;
+}
+
+/* info about each memebr. */
 .member-info{
     padding: 2px 16px;
     font-size:2em;
