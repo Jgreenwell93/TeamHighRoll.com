@@ -175,7 +175,7 @@ justify-content: center;
     border-radius: .5vw;
 }
 
-/* positioning of live status of each player default is hidden unless api function turns on, will be done by ID not class */
+/* positioning of live status of each player default is hidden unless api function turns on */
 .live-status{
     /* display:none; */
     position: absolute;
@@ -198,6 +198,7 @@ justify-content: center;
     width:25%;
     margin:2vw;
     padding: .5vw;
+    display: none;
 }
   /* info card photo element */
   .info-card-photo{
