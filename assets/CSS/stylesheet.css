@@ -181,8 +181,6 @@ justify-content: center;
     position: absolute;
     top: 2vh;
     left: 0vw;
-    padding-left: 20px;
-    padding-right: 20px; 
     border-radius: .5vw;
 }
 
@@ -209,6 +207,20 @@ justify-content: center;
   .info-card-photo img{
     border-radius: 5px;
     width: 25vw;
+}
+
+/* positioning of live status of each player default is hidden unless api function turns on, will be done by ID not class */
+.info-live-status{
+    /* display:none; */
+    position: absolute;
+    top: 1vh;
+    right: 16vw;
+    border-radius: .5vw;
+}
+
+/* live status icon sizing */
+.info-live-status img{
+    width: 10vw;
 }
 
 /* info about each memebr. */
