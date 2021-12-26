@@ -179,16 +179,16 @@ justify-content: center;
 .live-status{
     /* display:none; */
     position: absolute;
-    bottom: 30vh;
-    right: 10vw;
-    padding-left: 1px;
+    top: 2vh;
+    left: 0vw;
+    padding-left: 20px;
     padding-right: 20px; 
     border-radius: .5vw;
 }
 
 /* live status icon sizing */
 .live-status img{
-    width:60%;
+    width: 10vw;
 }
 
 .info-card{
