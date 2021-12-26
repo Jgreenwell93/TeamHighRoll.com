@@ -141,38 +141,44 @@ justify-content: center;
 
 }
 
-/* individal card object styling */
-.card{
-     background-color: var(--transp-back);
-     /* Add shadows to create the "card" effect */
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37);
-     transition: 0.3s;
-     border-radius: 5px; /* 5px rounded corners */
-     width:25%;
-     margin:2vw;
-     padding: .5vw;
-     
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658);
-  }
-
   /* card photo element */
-  .card-photo{
+  .card-link{
       position: relative;
+      width:25%;
+      margin:2vw;
   }
 
   /* card photo image sizing */
-.card-photo img{
+.card-link img{
     border-radius: 5px;
     width: 25vw;
+    background-color: var(--transp-back);
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.37);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    padding: .5vw;
+}
+
+/* card photo image hover effect for deeper shadow */
+.card-photo img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658);
+}
+
+/* positioning of captions on about link photos */
+.about-bottom-left{
+    position: absolute;
+    bottom: 2vh;
+    left: .75vw;
+    padding-left: 20px;
+    padding-right: 20px; 
+    background-color: var(--accentblue);
+    border-radius: .5vw;
 }
 
 /* positioning of live status of each player default is hidden unless api function turns on, will be done by ID not class */
 .live-status{
-    display:none;
+    /* display:none; */
     position: absolute;
     bottom: 30vh;
     right: 10vw;
@@ -195,6 +201,15 @@ justify-content: center;
     width:25%;
     margin:2vw;
     padding: .5vw;
+}
+  /* info card photo element */
+  .info-card-photo{
+    position: relative;
+}
+  /* info card photo image sizing */
+  .info-card-photo img{
+    border-radius: 5px;
+    width: 25vw;
 }
 
 /* info about each memebr. */
