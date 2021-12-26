@@ -148,7 +148,7 @@ justify-content: center;
   }
 
   /* card photo image sizing */
-.card-link img{
+.card-link-photo{
     border-radius: 5px;
     width: 25vw;
     background-color: var(--transp-back);
@@ -160,7 +160,7 @@ justify-content: center;
 }
 
 /* card photo image hover effect for deeper shadow */
-.card-link img:hover{
+.card-link-photo:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658);
 }
 
