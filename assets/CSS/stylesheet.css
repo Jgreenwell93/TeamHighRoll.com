@@ -177,7 +177,7 @@ justify-content: center;
 
 /* positioning of live status of each player default is hidden unless api function turns on */
 .live-status{
-    /* display:none; */
+    display:none;
     position: absolute;
     top: 2vh;
     left: 0vw;
@@ -301,6 +301,7 @@ justify-content: center;
 
 /* medium-small */
 @media (max-width: 800px){
+    /* header and nav bar elements */
     .page-header{
     height: 9vw;
     }
@@ -310,6 +311,8 @@ justify-content: center;
     .navitem{
         font-size: 1.8rem;
     }
+
+    /* landing page elements */
     .landing-main{
         width: 95%;
     }
@@ -317,10 +320,22 @@ justify-content: center;
         padding-top: 1vw;
     }
 
+    /* about page elements */
+    .about-bottom-left{
+        bottom: 1.5vh;
+    }
+    .live-status{
+        top: 1vh;
+        left: 0vw;
+    }
+    .live-status img{
+        width: 15vw;
+    }
+
+    /* content page elements */
     .photo-caption-h{
         font-size: 1.5rem;
     }
-
     .photo-caption-p{
         font-size: .8rem;
     }
@@ -330,36 +345,58 @@ justify-content: center;
 
 /* small */
 @media (max-width: 640px){
+    /* header and navbar elements */
     .page-header{
         display:flex;
         flex-wrap: wrap;
         height:20vw;
     }
+
+    /* landing page elements */
     .group-photo{
         height: 50vw;
+    }
+
+    /* about page elements */
+    .card-link-photo{
+        width: 30vw;
+    }
+    .about-bottom-left{
+        bottom: 1.2vh;
+    }
+    .live-status{
+        top: .5vh;
+        left: 0vw;
     }
 
 }
 
 /* extra small */
 @media (max-width: 420px){
+    /* header and nav elements */
     .page-header{
         display:flex;
         flex-wrap: wrap;
     }
-
     .nav-name{
         font-size: 1.5rem;
     }
-
      .navitem{
          font-size: 1.5rem;
     }
 
+    /* about page elements */
+    .card-link-photo{
+        width: 55vw;
+    }
+    .live-status img{
+        width: 25vw;
+    }
+
+    /* content page elements */
     .photo-caption-h{
         font-size: .9rem;
     }
-
     .photo-caption-p{
         font-size: .8rem;
     }
