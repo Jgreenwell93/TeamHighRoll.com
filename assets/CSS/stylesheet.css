@@ -168,6 +168,7 @@ justify-content: center;
 /* card photo image hover effect for deeper shadow */
 .card-link-photo:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658);
+    cursor: pointer;
 }
 
 /* positioning of captions on about link photos */
