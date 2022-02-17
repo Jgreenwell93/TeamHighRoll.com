@@ -147,6 +147,12 @@ justify-content: center;
       margin:2vw;
   }
 
+  /* button stylings outline removal */
+  .button{
+      border: none;
+      background: none;
+  }
+
   /* card photo image sizing */
 .card-link-photo{
     border-radius: 5px;
