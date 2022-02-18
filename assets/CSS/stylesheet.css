@@ -206,6 +206,7 @@ justify-content: center;
     margin:2vw;
     padding: .5vw;
     display: none;
+    /* modal positioning to be addressed after function active */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -220,7 +221,7 @@ justify-content: center;
     font-size: 28px;
     font-weight: bold;
   }
-  
+  /* address this after functionality active */
   .close:hover,
   .close:focus {
     color: black;
