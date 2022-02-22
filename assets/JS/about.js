@@ -25,6 +25,6 @@ window.onclick = function(event) {
 }
 
 
-// bug1 only closes when clicking on the padding
+
 // bug2 the hover effect isnt working on the close leemnt se CSS
 // bug3 the positiong and backfill itsnt there see CSS
