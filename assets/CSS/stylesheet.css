@@ -217,8 +217,7 @@ justify-content: center;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     width:25%;
-    margin:2vw;
-    /* bug1 */
+    margin:auto;
     padding: .5vw;
 }
 
@@ -251,7 +250,7 @@ justify-content: center;
 .info-live-status{
     /* display:none; */
     position: absolute;
-    top: 1vh;
+    top: 3vh;
     right: 16vw;
     border-radius: .5vw;
 }
