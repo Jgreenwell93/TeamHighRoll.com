@@ -27,4 +27,3 @@ window.onclick = function(event) {
 
 
 // bug2 the hover effect isnt working on the close leemnt se CSS
-// bug3 the positiong and backfill itsnt there see CSS
