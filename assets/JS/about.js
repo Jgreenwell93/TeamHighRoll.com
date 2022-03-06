@@ -22,11 +22,22 @@ const nickBtn = document.getElementById("nickBtn");
 const royBtn = document.getElementById("royBtn");
 const treyBtn = document.getElementById("treyBtn");
 
-// Get the <span> element that closes the modal
-const close = document.getElementsByClassName("close")[0];
-
 // gets all modals to globally set the display to none on close
 const modals = document.getElementsByClassName("modal");
+
+// Get the <span> element that closes the modal
+const close = document.getElementsByClassName("close");
+
+// When the user clicks on <span> (x), close the modal
+// for each element with the class "close" add an onclick event listener that performs function
+for (let i = 0; i < close.length; i++) {
+  close[i].addEventListener("click", function () {
+    // for each element with the class "modal" when onclick event is triggered set display to none
+    for (let i = 0; i < modals.length; i++) {
+      modals[i].style.display = "none";
+  }
+  });
+}
 
 // When the user clicks on the button, open the modal
 alecBtn.onclick = function () {
@@ -58,11 +69,6 @@ royBtn.onclick = function () {
 }
 treyBtn.onclick = function () {
   treyModal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-close.onclick = function () {
-  modals.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
