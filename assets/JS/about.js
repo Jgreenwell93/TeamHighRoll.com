@@ -99,7 +99,3 @@ window.onclick = function (event) {
     treyModal.style.display = "none";
   }
 }
-
-
-
-// bug2 the hover effect isnt working on the close leemnt se CSS

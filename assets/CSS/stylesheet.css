@@ -223,15 +223,17 @@ justify-content: center;
 
 /* The Close Button */
 .close {
+    position: relative;
+    z-index: 1; /* keeps the element ontop of the image element overlap for effects and click functions */
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-  /* address this after functionality active bug2*/
+  
   .close:hover,
   .close:focus {
-    color: black;
+    color: var(--accentblue);
     text-decoration: none;
     cursor: pointer;
   }
