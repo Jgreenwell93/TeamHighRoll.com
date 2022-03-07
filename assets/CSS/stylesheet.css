@@ -248,9 +248,19 @@ justify-content: center;
     width: 25vw;
 }
 
+.modal-bottom-left{
+    position: absolute;
+    bottom: 1vh;
+    left: .5vw;
+    padding-left: 20px;
+    padding-right: 20px; 
+    background-color: var(--accentblue);
+    border-radius: .5vw;
+}
+
 /* positioning of live status of each player default is hidden unless api function turns on, will be done by ID not class */
 .info-live-status{
-    /* display:none; */
+    display:none;
     position: absolute;
     top: 3vh;
     right: 16vw;
@@ -361,6 +371,7 @@ justify-content: center;
     /* about page elements */
     .about-bottom-left{
         bottom: 1.5vh;
+        left:1.5vh;
     }
     .live-status{
         top: 1vh;
@@ -369,7 +380,33 @@ justify-content: center;
     .live-status img{
         width: 15vw;
     }
-
+    .info-card-photo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .info-card{
+        width:50%;
+        height: 100%;
+    }
+    .info-card-photo img{
+        width: 35vw;
+    }
+    .modal-bottom-left{
+        bottom: 1vh;
+        left:6vh;
+    }
+    .member-info{
+        font-size:1.8em;
+    }
+    .info-live-status{
+        top: 1vh;
+        right: 23vw;
+    }
+    .info-live-status img{
+        width: 20vw;
+    }
+    
     /* content page elements */
     .photo-caption-h{
         font-size: 1.5rem;
@@ -406,6 +443,22 @@ justify-content: center;
         top: .5vh;
         left: 0vw;
     }
+    .info-card{
+        width:65%;
+    }
+    .info-card-photo img{
+        width: 50vw;
+    }
+    .modal-bottom-left{
+        left:5vh;
+    }
+    .info-live-status{
+        top:.5vh;
+        right: 30vw;
+    }
+    .info-live-status img{
+        width: 30vw;
+    }
 
 }
 
@@ -429,6 +482,21 @@ justify-content: center;
     }
     .live-status img{
         width: 25vw;
+    }
+    .info-card{
+        width:80%;
+    }
+    .info-card-photo img{
+        width: 70vw;
+    }
+    .modal-bottom-left{
+        left:2vh;
+    }
+    .info-live-status{
+        right: 38vw;
+    }
+    .info-live-status img{
+        width: 40vw;
     }
 
     /* content page elements */
