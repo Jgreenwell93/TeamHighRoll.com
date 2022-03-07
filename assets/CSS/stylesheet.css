@@ -147,6 +147,12 @@ justify-content: center;
       margin:2vw;
   }
 
+  /* button stylings outline removal */
+  .button{
+      border: none;
+      background: none;
+  }
+
   /* card photo image sizing */
 .card-link-photo{
     border-radius: 5px;
@@ -162,6 +168,7 @@ justify-content: center;
 /* card photo image hover effect for deeper shadow */
 .card-link-photo:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658);
+    cursor: pointer;
 }
 
 /* positioning of captions on about link photos */
@@ -189,6 +196,20 @@ justify-content: center;
     width: 10vw;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }  
+
 .info-card{
     background-color: var(--transp-back);
     /* Add shadows to create the "card" effect */
@@ -196,10 +217,27 @@ justify-content: center;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     width:25%;
-    margin:2vw;
+    margin:auto;
     padding: .5vw;
-    display: none;
 }
+
+/* The Close Button */
+.close {
+    position: relative;
+    z-index: 1; /* keeps the element ontop of the image element overlap for effects and click functions */
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--accentblue);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   /* info card photo element */
   .info-card-photo{
     position: relative;
@@ -210,11 +248,21 @@ justify-content: center;
     width: 25vw;
 }
 
+.modal-bottom-left{
+    position: absolute;
+    bottom: 1vh;
+    left: .5vw;
+    padding-left: 20px;
+    padding-right: 20px; 
+    background-color: var(--accentblue);
+    border-radius: .5vw;
+}
+
 /* positioning of live status of each player default is hidden unless api function turns on, will be done by ID not class */
 .info-live-status{
-    /* display:none; */
+    display:none;
     position: absolute;
-    top: 1vh;
+    top: 3vh;
     right: 16vw;
     border-radius: .5vw;
 }
@@ -323,6 +371,7 @@ justify-content: center;
     /* about page elements */
     .about-bottom-left{
         bottom: 1.5vh;
+        left:1.5vh;
     }
     .live-status{
         top: 1vh;
@@ -331,7 +380,33 @@ justify-content: center;
     .live-status img{
         width: 15vw;
     }
-
+    .info-card-photo{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .info-card{
+        width:50%;
+        height: 100%;
+    }
+    .info-card-photo img{
+        width: 35vw;
+    }
+    .modal-bottom-left{
+        bottom: 1vh;
+        left:6vh;
+    }
+    .member-info{
+        font-size:1.8em;
+    }
+    .info-live-status{
+        top: 1vh;
+        right: 23vw;
+    }
+    .info-live-status img{
+        width: 20vw;
+    }
+    
     /* content page elements */
     .photo-caption-h{
         font-size: 1.5rem;
@@ -368,6 +443,22 @@ justify-content: center;
         top: .5vh;
         left: 0vw;
     }
+    .info-card{
+        width:65%;
+    }
+    .info-card-photo img{
+        width: 50vw;
+    }
+    .modal-bottom-left{
+        left:5vh;
+    }
+    .info-live-status{
+        top:.5vh;
+        right: 30vw;
+    }
+    .info-live-status img{
+        width: 30vw;
+    }
 
 }
 
@@ -391,6 +482,21 @@ justify-content: center;
     }
     .live-status img{
         width: 25vw;
+    }
+    .info-card{
+        width:80%;
+    }
+    .info-card-photo img{
+        width: 70vw;
+    }
+    .modal-bottom-left{
+        left:2vh;
+    }
+    .info-live-status{
+        right: 38vw;
+    }
+    .info-live-status img{
+        width: 40vw;
     }
 
     /* content page elements */
