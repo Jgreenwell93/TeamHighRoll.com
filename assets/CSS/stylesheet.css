@@ -217,6 +217,7 @@ justify-content: center;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     width:25%;
+    height: auto;
     margin:auto;
     padding: .5vw;
 }
@@ -387,7 +388,6 @@ justify-content: center;
     }
     .info-card{
         width:50%;
-        height: 100%;
     }
     .info-card-photo img{
         width: 35vw;
